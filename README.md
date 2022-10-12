@@ -6,6 +6,6 @@ Install or odd raspberrypi OS in Android using proot-distro
 # Installation
 ```
 curl -sSL https://raw.githubusercontent.com/Anon4You/Raspberrypi-OS/main/Raspberrypi | bash
-'```
+```
 
 
