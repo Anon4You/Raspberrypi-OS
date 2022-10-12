@@ -1,0 +1,9 @@
+#!/bin/bash
+apt install proot-distro -y > /dev/null 2>&1
+echo "
+DISTRO_NAME='RaspberryPi OS'
+
+TARBALL_URL['arm']='http://downloads.raspberrypi.org/raspbian_lite/archive/2018-04-19-15:24/root.tar.xz'
+TARBALL_SHA256['arm']='c64cb0b6543dbaaae38539e574ad3ef1ecab25285208751dac57d1a852b4fa98'
+" >> $PREFIX/etc/proot-distro/raspberrypi.sh
+proot-distro list
